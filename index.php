@@ -33,9 +33,9 @@ Session::set("loginmsg", NULL);
      <tr>
         <th width = "5%">Serial</th>
         <th width = "20%">Name</th>
-        <th width = "20%">Username</th>
-        <th width = "20%">Email Address</th>
-        <th width = "350%">Action</th>
+        <th width = "30%">Username</th>
+        <th width = "30%">Email Address</th>
+        <th width = "15%">Action</th>
 
       </tr>
       <?php 
