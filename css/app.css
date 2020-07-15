@@ -1,0 +1,175 @@
+html{
+	font-size: 16px !important;
+}
+
+.navbar{
+	background-color: #f2f6fc;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #383199;
+}
+
+.content-box{
+	display: flex;
+	border-radius: 4px;
+	height: 80vh;
+}
+.sidebar{
+	flex-basis: 30%;
+	border-style: solid;
+	border-color: lightgray;
+	border-width: 1px;
+	border-right: 0px;
+	border-radius: 4px 0 0 0;
+	justify-content: center;
+	align-items: center;
+}
+.main-content{
+	flex-basis: 70%;
+	border-radius: 0 4px 0 0;
+}
+
+.panel-header{
+	background-color: #f2f6fc;
+	border-radius: 0;
+	display: flex;
+	height: 100px;
+	text-align: center;
+	align-self: center;
+	margin: 0;
+}
+
+.btn{
+	border-radius: 2px;
+}
+
+.btn-success{
+	background-color: #3467eb;
+	border: 1px solid #3467eb;
+}
+
+.btn-success:hover{
+	background-color: #0738ab;
+	border: 1px solid #0738ab;
+}
+.btn-success:focus{
+	background-color: #3467eb !important;
+	border: 1px solid #3467eb !important;
+}
+
+
+*{
+	transition: all 0.3s ease;
+}
+
+ul{
+
+}
+li{
+	list-style: none;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/*Sidebar styling*/
+.sidebar-header{
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f6fc;
+	border-bottom: 1px solid lightgray;
+}
+
+.sidebar-header div{
+	font-size: 1.2rem;
+	align-self: center;
+}
+.sidebar-header div span{
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.sidebar-content{
+	display: flex;
+	background-color: white;
+	align-items: center;
+}
+
+.sidebar-content ul{
+	width: 100%;
+	padding: 0;
+}
+
+.sidebar-content ul li {
+	width: 100%;
+}
+
+.sidebar-content ul li a{
+	display: flex !important;
+	width: 100%;
+	padding: 1rem;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 600;
+	font-stretch: 1rem;
+	color: #383199;
+	margin: 3px 0;
+}
+
+.sidebar-content ul li a:hover{
+	background-color: #3467eb;
+	color: white;
+}
+
+.main-content{
+	border: 1px solid lightgray;
+	justify-content: center;
+	align-items: center;
+}
+
+.panel-header{
+	border-bottom: 1px solid lightgray;
+}
+.panel-header div{
+	display: flex;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding-left: 3rem;
+	align-items: center;
+	width: 100%;
+}
+
+.panel-header div span{
+	color: #383199;
+}
+
+
+.panel-body{
+	padding-left: 3rem !important;
+}
+
+.active{
+	background-color: #3467eb;
+	color: white !important;
+}
+
+
+/*Custom css styling of bootstrap*/
+.alert-success {
+	text-align: center;
+    color: #00a203;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    font-size: 1.05rem;
+}
