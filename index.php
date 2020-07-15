@@ -29,7 +29,7 @@ Session::set("loginmsg", NULL);
        </p></span></h2>
 </div>
 <div class="panel-body">
-  <table class="table table-striped">
+  <table class="table table-bordered">
      <tr>
         <th width = "5%">Serial</th>
         <th width = "20%">Name</th>
