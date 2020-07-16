@@ -36,12 +36,12 @@
 <div class="content-box">
   <?php  include('includes/sidebar.php'); ?>
 
-  <div class="main-content">
-   <div class="panel-header">
+  <div class="panel panel-default ">
+   <div class="panel-heading">
       <div>Profile of <span><?php echo $userdata->name; ?></span></div>
     </div>     
     <div class="panel-body">
-          
+        <div style="max-width: 900px; margin: 0 auto;">  
           <div class="form-group">
               <label for = "name">Your Name</label>
               <br>
@@ -63,7 +63,8 @@
                <?php echo $userdata->email; ?></span>
            </div>
              
-                  <?php } ?>             
+                  <?php } ?>
+        </div>             
      </div>      
   </div>
 </div>

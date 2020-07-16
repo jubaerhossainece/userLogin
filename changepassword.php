@@ -39,12 +39,12 @@
   <?php  include('includes/sidebar.php'); ?>
 
 
-  <div class="main-content">
-   <div class="panel-header">
+  <div class="panel panel-default">
+   <div class="panel-heading">
       <div>Update Password</div>
     </div>     
     <div class="panel-body">
-       <div style="max-width:600px;">
+       <div style="max-width:600px; margin: 0 auto;">
        
        
        

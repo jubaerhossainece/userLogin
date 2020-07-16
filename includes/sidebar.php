@@ -17,8 +17,8 @@
                if($userid == $sessionId){
             
         ?>
-        <li><a href="editProfile.php?id=<?php echo $sessionId ?>" class="sidebar-link">Edit Profile</a></li>
         <li><a href="profile.php?id=<?php echo $userid ?>" class="sidebar-link">View Profile</a></li>
+        <li><a href="editProfile.php?id=<?php echo $sessionId ?>" class="sidebar-link">Edit Profile</a></li>
         <li><a href="changepassword.php?id=<?php echo $userid; ?>" class="sidebar-link">Change Password</a></li>
   
       <?php } ?>
