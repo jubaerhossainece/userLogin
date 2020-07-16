@@ -1,3 +1,4 @@
+<link rel = "stylesheet" href="css/login.css"/>
 <?php
         include('includes/header.php');
         include('library/User.php');
@@ -30,14 +31,16 @@
         <form action="" method="POST">
            <div class="form-group">
                <label for="email">Email Address</label>
-                <input id="email" type="text" name="email" class="form-control" required = "required"/>
+                <input id="email" type="text" name="email" class="form-control email" required = "required"/>
+               <i class="fa fa-envelope"></i>
            </div>
            
-           <div class="form-group">
+           <div class="form-group password">
                 <label for="password">Password</label>
                 <input id="password" type="password" name="password" class="form-control" required = "required"/>
+                <i class="fa fa-lock"></i>
             </div>
-            <button type="submit" name="login" class="btn btn-success">Login</button>
+            <button type="submit" name="login" class="btn bttn-success">Login</button>
         </form>      
       </div>               
      </div>      

@@ -1,0 +1,40 @@
+.form-group{
+	position: relative;
+}
+.fa{
+	position: absolute;
+	font-size: 20px !important;
+	background-color: #3467eb;
+	color: white;
+	top: 25px;
+	left: 0px;
+	padding: 7px 12px;
+	border-radius: 3px 0 0 3px;
+}
+
+.password{
+	position: relative;
+}
+
+.fa-lock{
+	padding: 5px 15px;
+    font-size: 24px !important;
+    top: 25px;
+}
+
+.form-control{
+	border-radius: 3px !important;
+	padding-left: 3.3rem !important;
+}
+
+.bttn-success{
+	background-color: #3467eb;
+	border-radius: 3px !important;
+	font-weight: 600 !important;
+	color: white; 
+}
+
+.bttn-success:hover{
+	background-color: #0738ab;
+	color: white !important;
+}
