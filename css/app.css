@@ -92,6 +92,7 @@ a{
     background-color: #f2f6fc;
     border-bottom: 1px solid lightgray;
     text-align: center;
+    justify-content: center;
 }
 
 .sidebar-header div{
