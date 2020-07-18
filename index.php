@@ -1,6 +1,6 @@
 <?php
         include('includes/header.php');
-        include('library/user.php');
+        include('library/User.php');
         Session::checkSession();
         $user = new User();
 ?>
@@ -17,8 +17,8 @@ Session::set("loginmsg", NULL);
 
 
 <div class="panel panel-default">
-<div class="panel-heading">
-   <h2>User List<span class="pull-right"><p>Welcome!<strong>
+<div class="index-heading">
+   <h2>User List</h2><h2><span class="pull-right"><p>Welcome!<strong>
    <?php
        $name = Session::get("username");
        if(isset($name)){
