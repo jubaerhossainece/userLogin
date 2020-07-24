@@ -1,4 +1,4 @@
-<?php
+<?php ob_start();
 include_once('Session.php');
 include('Database.php');
 
@@ -101,18 +101,18 @@ class  User{
         $check_email = $this->emailCheck($email);
         
         if($email == "" OR $password == ""){
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Field must not be Empty</div>";
-            return $msg;
+            $emptyMsg = "<div class='alert alert-danger'><strong>Error! </br></strong>Field must not be Empty</div>";
+            return $emptyMsg;
         } 
        
        if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-            $msg = "<div class = 'alert alert-danger'><strong>Error!</strong>The email address is not valid!</div>";
-            return $msg;
+            $emailMsg = "<div class = 'alert alert-danger'><strong>Error!</br></strong>The email address is not valid!</div>";
+            return $emailMsg;
         }
         
         if($check_email == false){
-            $msg = "<div class = 'alert alert-danger'><strong>Error!</br></strong>The email address does not exist!</div>";
-            return $msg;
+            $emailMsg = "<div class = 'alert alert-danger'><strong>Error!</br></strong>The email address does not exist!</div>";
+            return $emailMsg;
         }
        
        $result = $this->getLoginUser($email, $password);
@@ -124,9 +124,7 @@ class  User{
            Session::set("name", $result->name);
            Session::set("username", $result->username);
            Session::set("loginmsg", "<div class='alert alert-success'><p><strong>You are logged in successfully!</strong></p></div>");
-           
            header('Location: index.php');
-
        }else{
            $msg = "<div class='alert alert-danger'><strong>Error! </br></strong>Data not found!</div>";
            return $msg;
@@ -191,8 +189,8 @@ class  User{
     $result = $query->execute();
     
     if($result){
-        $msg = "<div class ='alert alert-success'><strong>Your profile has been successfully updated!</strong></div>";
-        return $msg;
+        Session::set("userUpdate", "<div class ='alert alert-success'><strong>Your profile has been successfully updated!</strong></div>");
+           header('Location: profile.php?id='.$id);
     }else{
         $msg = "<div class ='alert alert-danger'><strong>Error! </strong>Sorry, there has been problem updating your details!</div>";
         return $msg;
@@ -250,8 +248,8 @@ class  User{
         $result = $query->execute();
 
         if($result) {
-            $msg = "<div class='alert alert-success'><strong>Your password updated successfully!</strong></div>";
-            return $msg;
+            Session::set("passUpdate", "<div class ='alert alert-success'><strong>Your password has been changed successfully!</strong></div>");
+           header('Location: profile.php?id='.$id);
         }else {
             $msg = "<div class='alert alert-success'><strong>Error!</strong>Your password not updated!</div>";
             return $msg;
@@ -260,4 +258,5 @@ class  User{
     
     
 }
+ob_end_flush();
 ?>

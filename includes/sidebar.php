@@ -1,3 +1,5 @@
+<?php ob_start();
+?>
 <div class="sidebar">
     <div class="sidebar-header">
       <div>Logged in as <span><?php
@@ -11,12 +13,12 @@
 
       <ul>
 
-      <?php
+  <?php
+        
+           $sessionId = Session::get("id");
+           if($userid == $sessionId){
             
-               $sessionId = Session::get("id");
-               if($userid == $sessionId){
-            
-        ?>
+  ?>
         <li><a href="profile.php?id=<?php echo $userid ?>" class="sidebar-link">View Profile</a></li>
         <li><a href="editProfile.php?id=<?php echo $sessionId ?>" class="sidebar-link">Edit Profile</a></li>
         <li><a href="changepassword.php?id=<?php echo $userid; ?>" class="sidebar-link">Change Password</a></li>
@@ -29,3 +31,5 @@
     </div>
     
   </div>
+
+  <?php ob_end_flush(); ?>

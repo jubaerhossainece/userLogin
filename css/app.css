@@ -191,6 +191,14 @@ a{
     font-size: 1.05rem;
 }
 
+.alert-danger {
+	text-align: center;
+    color: #d00d0d;
+    background-color: #f0d8d8;;
+    border-color: #f0d8d8;;
+    font-size: 1.05rem;
+}
+
 .form-control{
 	border-radius: 3px !important;
 }
